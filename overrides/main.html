@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Adds file-eye icon to view hookup guide as a single page -->
+{% if "single_page.md" %}
+    <a href="/<GitHub Repo Name>/single_page" title="View as Single-Page" class="md-content__button md-icon">
+        {% include ".icons/material/file-eye-outline.svg" %}
+    </a>
+{% endif %}
+
+{{ super() }}
+{% endblock content %}
