@@ -1,11 +1,11 @@
 # Documentation page information
-site_name: <Official Product Name> Hookup Guide
-site_description: A guide for getting started with the <Product Name>
-site_url: https://sparkfun.github.io/<GitHub Repo Name>
+site_name: Super Headphones Hookup Guide
+site_description: A tutorial for hacking your own headphones with ambient mics for loud environments.
+site_url: https://sparkfun.github.io/SuperHeadphones
 site_author: SparkFun Electronics
 
-repo_url: https://github.com/sparkfun/<GitHub Repo Name>
-repo_name: sparkfun/<GitHub Repo Name>
+repo_url: https://github.com/sparkfun/SuperHeadphones
+repo_name: sparkfun/SuperHeadphones
 
 copyright:
   Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;</a><br>
@@ -154,7 +154,7 @@ plugins:
       type: timeago
   # Add git committers at the bottom of the page
   - git-committers:
-      repository: sparkfun/<GitHub Repo Name>
+      repository: sparkfun/SuperHeadphones
       branch: main
   # Add git authors at the bottom of the page
   - git-authors
@@ -219,7 +219,7 @@ extra:
   # Configures social icons in the footer
   social:
     - icon: sfe-logo # simple/sparkfun
-      link: https://www.sparkfun.com/products/<SKU Number>
+      link: https://www.sparkfun.com/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/sparkfun
     - icon: fontawesome/brands/instagram
@@ -250,7 +250,7 @@ extra_javascript:
 
 # Configures webpage navigation
 nav:
-  - Hookup Guide:
+  - Project Guide:
     - Introduction: introduction.md
     - Hardware Overview: hardware_overview.md
     - Hardware Assembly: hardware_assembly.md
