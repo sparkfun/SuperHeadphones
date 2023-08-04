@@ -1,6 +1,6 @@
 # Did we make a mistake?
 
-Spot something wrong? Please let us know. <a href="https://github.com/sparkfun/<GitHub Repo Name>/issues" alt="Issues"><img src="https://img.shields.io/github/issues/sparkfun/<GitHub Repo Name>.svg" /></a>
+Spot something wrong? Please let us know. <a href="https://github.com/sparkfun/SuperHeadphones/issues" alt="Issues"><img src="https://img.shields.io/github/issues/sparkfun/SuperHeadphones.svg" /></a>
 
 <!-- Technical Assistance Box -->
 !!! warning "Need Help?"
@@ -20,15 +20,15 @@ Spot something wrong? Please let us know. <a href="https://github.com/sparkfun/<
 
 All of our documentation can be modified by you! Please help us make it better.
 
-* The documentation files for these pages are contained in the [`docs` folder](https://github.com/sparkfun/<GitHub Repo Name>/tree/main/docs) of the [<Official Product Name> repository](https://github.com/sparkfun/<GitHub Repo Name>).
+* The documentation files for these pages are contained in the [`docs` folder](https://github.com/sparkfun/SuperHeadphones/tree/main/docs) of the [SuperHeadphones repository](https://github.com/sparkfun/SuperHeadphones).
 
 ### 🔍 Spot something wrong?
 
-If a section of the documentation is incorrect, please [open an issue](https://github.com/sparkfun/<GitHub Repo Name>/issues) and let us know.
+If a section of the documentation is incorrect, please [open an issue](https://github.com/sparkfun/SuperHeadphones/issues) and let us know.
 
 ### Do you have a suggested correction?
 
-1. With a GitHub account, [fork this repository](https://github.com/sparkfun/<GitHub Repo Name>/fork).
+1. With a GitHub account, [fork this repository](https://github.com/sparkfun/SuperHeadphones/fork).
 2. Add your correction(s) or improvement(s) to the markdown file(s)
 3. File a pull request with your changes, and enjoy making the ~~words~~ ~~worlds~~ world a better place.
 	* Once received, the documentation specialist will automatically be notified.
@@ -38,15 +38,15 @@ If a section of the documentation is incorrect, please [open an issue](https://g
 
 All of our designs are open-source! Please help us make it better.
 
-* Our board design files are contained in the [`Hardware` folder](https://github.com/sparkfun/<GitHub Repo Name>/tree/main/Hardware) of the [<Official Product Name> repository](https://github.com/sparkfun/<GitHub Repo Name>).
+* Our board design files are contained in the [`Hardware` folder](https://github.com/sparkfun/SuperHeadphones/tree/main/Hardware) of the [SuperHeadphones repository](https://github.com/sparkfun/SuperHeadphones).
 
 ### Does something not make sense? 🤔
 
-If part of the design is confusing, please [open an issue](https://github.com/sparkfun/<GitHub Repo Name>/issues) and let us know.
+If part of the design is confusing, please [open an issue](https://github.com/sparkfun/SuperHeadphones/issues) and let us know.
 
 ### Did we forget to include an important function of the board? 🤦
 
-If part of the board's functionality is missing, please [open an issue](https://github.com/sparkfun/<GitHub Repo Name>/issues) and file a feature request.
+If part of the board's functionality is missing, please [open an issue](https://github.com/sparkfun/SuperHeadphones/issues) and file a feature request.
 
 !!! tip "Design Considerations"
 	Please keep in mind that we may intentionally exclude certain functions of the board to meet our product design requirements.
@@ -56,7 +56,7 @@ If part of the board's functionality is missing, please [open an issue](https://
 
 ### Do you wish to contribute directly to improving the board design?
 
-1. With a GitHub account, [fork this repository](https://github.com/sparkfun/<GitHub Repo Name>/fork).
+1. With a GitHub account, [fork this repository](https://github.com/sparkfun/SuperHeadphones/fork).
 2. Add your design augmentation(s)
 3. File a pull request with your changes, and enjoy making the ~~words~~ ~~worlds~~ world a better place.
 	1. Once received, the engineer in charge of the original design will automatically be notified.
