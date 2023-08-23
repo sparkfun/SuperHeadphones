@@ -1,13 +1,18 @@
----
-icon: material/cog
----
-
 <!-- This section goes into detail about the various components on the product, solder jumpers as well as the board dimensions with a dimensional drawing exported from Eagle. -->
 
-## Primary Component
+## Block Diagram
 
-## Secondary Components(s)
+<figure markdown>
+[![Headphones](../assets/img/Super_Headphones_Block_Diagram_v01.jpg){ width="600" }](../assets/img/Super_Headphones_Block_Diagram_v01.jpg "Click to enlarge")
+<figcaption markdown>
+High level block diagram of the headphone system.
+</figcaption>
+</figure>
+
+## Primary Components
 <!-- Secondary Components if necessary (UART converters, charge IC, etc.) -->
+
+
 
 ## Connectors/Connections
 <!-- Qwiic connectors, USB, PTHs, Power, etc. -->

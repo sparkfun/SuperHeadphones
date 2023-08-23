@@ -257,7 +257,7 @@
 /* Sets images size in grid cards */
 .md-typeset .grid ul figure img {
   width: 100%;
-  max-width: 200px;
+  max-width: 315px;
 }
 
 /* Add compatibility to mobile platforms - by setting minimum width for grid cards */

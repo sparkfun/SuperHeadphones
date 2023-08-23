@@ -1,7 +1,3 @@
----
-icon: material/tools
----
-
 <!-- This section covers any assembly steps needed to complete the guide. Can be very simple but should include a simple assembly (Qwiic, USB, etc.) and a Soldered Assmebly section link to the PTH Soldering Tutorial-->
 
 ## Qwiic Assembly
