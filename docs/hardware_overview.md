@@ -2,61 +2,68 @@
 
 ## Block Diagram
 
+Here is a high-level block diagram of the sound system inside the headphones. The 
+Audio Codec is central to this design. It handles all of the sound
+inputs and outputs. The ESP32 Thing Plus is still the "brain", and it is necessary 
+to setup and control the codec with I2C. The ESP32 also receives the wireless audio (BT), 
+and then sends that to the codec, digitally, with I2S audio data lines.
+
 <figure markdown>
-[![Headphones](../assets/img/Super_Headphones_Block_Diagram_v01.jpg){ width="600" }](../assets/img/Super_Headphones_Block_Diagram_v01.jpg "Click to enlarge")
+[![Headphones](../assets/img/Super_Headphones_Block_Diagram_v01_600wide.jpg){ width="600" }](../assets/img/Super_Headphones_Block_Diagram_v01.jpg "Click to enlarge")
 <figcaption markdown>
 High level block diagram of the headphone system.
 </figcaption>
 </figure>
 
-## Primary Components
-<!-- Secondary Components if necessary (UART converters, charge IC, etc.) -->
+## Exploded View
 
-
-
-## Connectors/Connections
-<!-- Qwiic connectors, USB, PTHs, Power, etc. -->
-
-## LEDs
-
-## Jumpers
-
-??? note "Never modified a jumper before?"
-	Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces tutorial</a> for a quick introduction!
-	<p align="center">
-		<a href="https://learn.sparkfun.com/tutorials/664">
-		<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg" alt="Tutorial's thumbnail"><br>
-        How to Work with Jumper Pads and PCB Traces</a>
-	</p>
-
-
-## Board Dimensions
-
-The board dimensions are illustrated in the drawing below; the listed measurements are in inches.
+Here is an exploded view of the heapdhones. It took a little experimenting and tinkering 
+to eventually dissasemble all of the parts. 
 
 <figure markdown>
-[![Board Dimensions](../assets/img/dimensions.png){ width="400" }](../assets/img/dimensions.png "Click to enlarge")
+[![Headphones](../assets/img/superheadphones_exploded_600wide.jpg){ width="600" }](../assets/img/superheadphones_exploded.jpg "Click to enlarge")
 <figcaption markdown>
-[Board dimensions (PDF)](../assets/board_files/dimensions.pdf) for the <Product Name>, in inches.
+Exploded view of the headphone system.
 </figcaption>
 </figure>
 
+## Foam Removal
 
-??? tip "Need more measurements?"
-	For more information about the board's dimensions, users can download the [Eagle files](../assets/board_files/eagle_files.zip) for the board. These files can be opened in Eagle and additional measurements can be made with the dimensions tool.
+Removing the foam was pretty straight forward. 
+You can use a flat head screw driver or pliers, but be careful. As you can see, 
+I accidentally ripped the foam apart when I pulled a bit too hard. 
 
-	??? info ":octicons-download-16:{ .heart } Eagle - Free Download!"
-		Eagle is a [CAD]("computer-aided design") program for electronics that is free to use for hobbyists and students. However, it does require an account registration to utilize the software.
+<figure markdown>
+[![Headphones](../assets/img/foam_ripped_600wide.jpg){ width="600" }](../assets/img/foam_ripped.jpg "Click to enlarge")
+<figcaption markdown>
+Oops! I accidentally ripped the foam.
+</figcaption>
+</figure>
 
-		<center>
-		[Download from<br>:autodesk-primary:{ .autodesk }](https://www.autodesk.com/products/eagle/free-download "Go to downloads page"){ .md-button .md-button--primary width="250px" }
-		</center>
-	
-	??? info ":straight_ruler: Dimensions Tool"
-		This video from Autodesk demonstrates how to utilize the dimensions tool in Eagle, to include additional measurements:
+It's really best to take it slowly and pull it gently, little-by-little. I really got the hang of 
+this by the end of this project, as I ended up taking mine apart nearly 50 times 
+as I dialed in the wiring and finally chose the perfect microphones for the job. 
+Hopefully, by reading this tutorial, you can keep this dis-assembly and re-assembly 
+cycle to a minimum :). 
 
-		<center>
-		<div class="video">
-		<iframe src="https://www.youtube.com/embed/dZLNd1FtNB8" title="EAGLE Dimension Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		</center>
+## Screws
+
+After you remove the foam, this will expose the screws that hold the outer and inner parts 
+of each can together. 
+
+<figure markdown>
+[![Headphones](../assets/img/hp_screws_600wide.jpg){ width="600" }](../assets/img/hp_screws.jpg "Click to enlarge")
+<figcaption markdown>
+Two small screws hold the cans together.
+</figcaption>
+</figure>
+
+The screws are located back behind the black plastic. Because of the angle, they 
+can be a little difficult to access, but with a small phillips screw driver and 
+the right amount of pressure, it can be done. Maybe there is a tiny right angled 
+screw driver that someone knows... if you do, please comment below! 
+
+When the inner screws are removed, the cans come apart, and 
+then you have access to the inner electronics. As you wire things up, I would advise 
+to keep your wires fairly short, as it all has to fit under the hood when you put 
+it back together.
