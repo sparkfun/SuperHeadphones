@@ -1,18 +1,17 @@
 This tutorial will guide you through how to build your own wireless and/or wired
 headphones with ambient microphones. We start with some off-the-shelf headphones 
 intended for use while lawn mowing, and then hack in some new electroncis to allow
-bluetooth, wired input, and stereo ambient microphones. The original purpose of 
-this project was to make it easy and safe to play loud music with a rock band in 
-the basement, however, the inclusion of the natural sounds around you into your 
-listening experiece can be useful in many other situations.
+wireless (BT), auxilary 3.5mm TRS input, and stereo ambient microphones. The original 
+purpose of this project was to make it easy and safe to play loud music with a rock 
+band in the basement, however, the inclusion of the natural sounds around you into 
+your listening experiece can be useful in many other situations.
 
 <div class="grid cards" markdown align="center">
 
--   <a href="../assets/img/Image-52.jpeg">
+-   <a href="../assets/img/hps_1500wide.jpg">
 	<figure markdown>
-	![Headphones](../assets/img/Image-52.jpeg)
+	![Headphones](../assets/img/hps_315wide.jpg)
 	</figure>
-    </a>
 
     ---
         
@@ -69,9 +68,9 @@ holes to mount this entire assembly into headphone can.
 
 <div class="grid cards" markdown align="center">
 
--   <a href="../assets/img/hp6.jpg">
+-   <a href="../assets/img/hp6_1000wide.jpg">
 	<figure markdown>
-	![Headphones](../assets/img/hp6.jpg)
+	![Headphones](../assets/img/hp6_315tall.jpg)
 	</figure>
     </a>
 
@@ -79,9 +78,9 @@ holes to mount this entire assembly into headphone can.
         
     **Topside**</a>
 
--   <a href="../assets/img/hp7.jpg">
+-   <a href="../assets/img/hp7_1000wide.jpg">
 	<figure markdown>
-	![Headphones](../assets/img/hp7.jpg)
+	![Headphones](../assets/img/hp7_315tall.jpg)
 	</figure>
     </a>
 

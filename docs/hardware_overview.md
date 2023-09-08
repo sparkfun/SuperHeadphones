@@ -18,7 +18,8 @@ High level block diagram of the headphone system.
 ## Exploded View
 
 Here is an exploded view of the heapdhones. It took a little experimenting and tinkering 
-to eventually dissasemble all of the parts. 
+to eventually dissasemble all of the parts. In this section, we will share a few
+techniques we learned along the way during this hack.
 
 <figure markdown>
 [![Headphones](../assets/img/superheadphones_exploded_600wide.jpg){ width="600" }](../assets/img/superheadphones_exploded.jpg "Click to enlarge")
@@ -41,8 +42,8 @@ Oops! I accidentally ripped the foam.
 </figure>
 
 It's really best to take it slowly and pull it gently, little-by-little. I really got the hang of 
-this by the end of this project, as I ended up taking mine apart nearly 50 times 
-as I dialed in the wiring and finally chose the perfect microphones for the job. 
+this by the end of this project. I must have taken mine apart nearly 50 times 
+as I fine tuned the wiring and swapped out microphones during testing. 
 Hopefully, by reading this tutorial, you can keep this dis-assembly and re-assembly 
 cycle to a minimum :). 
 
@@ -60,10 +61,62 @@ Two small screws hold the cans together.
 
 The screws are located back behind the black plastic. Because of the angle, they 
 can be a little difficult to access, but with a small phillips screw driver and 
-the right amount of pressure, it can be done. Maybe there is a tiny right angled 
-screw driver that someone knows... if you do, please comment below! 
+the right amount of pressure, it can be done.
+
+## Knob and PCB removal
 
 When the inner screws are removed, the cans come apart, and 
-then you have access to the inner electronics. As you wire things up, I would advise 
-to keep your wires fairly short, as it all has to fit under the hood when you put 
-it back together.
+then you will see the original electronics (blue). The volume knob is simply 
+pressure fitted onto the potentiometer shaft, so you can pull that directly off. 
+Unscrew the potentiometer mounting nut and the four mounting screws, and you will 
+then be able to remove the original electronics.
+
+<figure markdown>
+[![Headphones](../assets/img/knob_removal_600wide.jpg){ width="600" }](../assets/img/knob_removal.jpg "Click to enlarge")
+<figcaption markdown>
+Knob, nut, and 4 mounting screws removed.
+</figcaption>
+</figure>
+
+## Wiring Diagram
+
+Once everything is opened up, you can begin wiring up the necessary connections. 
+Here is a wiring diagram to show all the connections in one place. 
+
+<figure markdown>
+[![Headphones](../assets/img/SuperHeadphones_Wiring_Diagram_600wide.jpg){ width="600" }](../assets/img/SuperHeadphones_Wiring_Diagram.jpg "Click to enlarge")
+<figcaption markdown>
+Wiring Diagram. Lots to hook up!
+</figcaption>
+</figure>
+
+Three important things to remember:
+
+* Use 26 guage wire for most of the connections, as it can get fairly tight in there. 
+I used an old ethenet cable which had 8 conductors. If you open those up, the resulting 
+hookup wire is quite nice to work with, and has great coloring to keep things strait.
+
+* The left microphone signal and its ground connection must use a shielded cable. If you 
+wire it up with bare hook-up wire, then you will be prone to picking up strange 
+sounds like distant radio stations and creeping whining noises with varying frequencies. 
+Kind of fun, but not ideal for every listening experience.
+
+* The microphones we ultimately chose require a specific power and signal circuit (see below). 
+
+## Microphone Circuit
+
+Here is the required circuit from the datasheet of the PUI Audio AOM-5035L.
+
+<figure markdown>
+[![Headphones](../assets/img/mic_circuit_600wide.png){ width="600" }](../assets/img/mic_circuit.png "Click to enlarge")
+<figcaption markdown>
+AOM-5035L Microphone Signal & Power Circuit
+</figcaption>
+</figure>
+
+Note, the capacitor is already included on the WM8960 input, and so we 
+only need to wire up the pull-down resistor of 5.6K on the signal. Put this pull-down 
+resistor as close to the microphone as possible. The left microphone is the only 
+one that is more suseptable to picking up noise, and so we found that having the 
+pull-down in that ear-can (and using a sheilded mic cable) elliminated any unwanted 
+noise.

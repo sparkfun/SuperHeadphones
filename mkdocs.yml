@@ -253,10 +253,9 @@ nav:
   - Project Guide:
     - Introduction: introduction.md
     - Hardware Overview: hardware_overview.md
-    - Hardware Assembly: hardware_assembly.md
-    - <Product Name> Arduino Library:
-      - Software Setup: software_setup.md
-      - Arduino Examples: examples.md
+    - Arduino Code Overview: arduino_code_overview.md
+    - Microphone Testing: microphone_testing.md
+    - Custom Molded Headset: custom_molded_headset.md
   - Resources: resources.md
   - Support:
     - Troubleshooting: troubleshooting.md
