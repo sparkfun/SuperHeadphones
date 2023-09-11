@@ -1,8 +1,42 @@
+/*
+Super Headphones
+SparkFun Electronics
+Pete Lewis
+September 2023
+
+Using an ESP32 Thing Plus and a WM8960 Audio Codec,
+This project enables you to create your own wireless headphones (aka BT).
+It also alows you to mix in a pair of ambient microphones!
+Read the tutorial here:
+https://docs.sparkfun.com/SuperHeadphones/
+
+This code utilized Paul Schatzmann's ESP32-A2DP library to make all the wireless 
+audio (BT) functionality happen. Big thank you to Paul Schatzmann and the many others 
+who have contributed to that library!
+Download here: https://github.com/pschatzmann/ESP32-A2DP
+
+  Do you like this open source code? Help support SparkFun. Buy a board!
+
+    SparkFun Audio Codec Breakout - WM8960 (Qwiic)
+    https://www.sparkfun.com/products/21250
+
+    SparkFun Thing Plus - ESP32 WROOM (USB-C)
+    https://www.sparkfun.com/products/20168
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 #include <Wire.h>
-#include <SparkFun_WM8960_Arduino_Library.h>  //Click here to get the library: http://librarymanager/All#SparkFun_WM8960
+#include <SparkFun_WM8960_Arduino_Library.h>  // CTRL+Click here to get the library: http://librarymanager/All#SparkFun_WM8960
 WM8960 codec1;
 
-#include "BluetoothA2DPSink.h"
+#include "BluetoothA2DPSink.h" // To manually install, download here: https://github.com/pschatzmann/ESP32-A2DP
 BluetoothA2DPSink a2dp_sink;
 
 //// Iot Redboard
@@ -55,27 +89,17 @@ void setup() {
   i2s_install();
   i2s_setpin();
 
-  a2dp_sink.start("PetePhones");
+  a2dp_sink.start("SuperHeadphones");
 }
 
 void loop() {
 
-  // take a reading of volume on the 8878 MEMs mics (the low SPL)
-  // if the signal is clipping, that means that something loud is causing it to clip.
-  // this clipping threshold will be the volume when we switch over to the 2020 MEMs mics (High SPL).
-  // Note, we don't want to just always use the 2020s because they are less sensative and don't pick up
-  // on the quieter things without a huge amount of gain, and thus more hiss.
-  // ideally, we can use the 8878s for low volume stuff, and the 2020s for louder stuff.
-  // When one mic is "active", the other is muted.
-  // We will control the "muting" and "un-muting" by using the pga gains with zero-crossover activated.
-  // I have "" around muting and un-muting, because in reality we may not totally mute, maybe we will
-  // just bring down the gain to an in-audable amount. I'm worried that a full mute command might be too
-  // slow and/or clunky. We need fast smoth switching between mics.
-
-  // every loop, take a reading and put it into the array
-  // increment position
-  // loop back position to start of array, when we reach the end
-  // take all readings in array, and create a rolling average.
+  // Read the volumet potentiometer to set the volume of the ambient mics.
+  // Every loop:
+  // - take a reading and put it into the array
+  // - increment position
+  // - loop back position to start of array 
+  // - when we reach the end take all readings in array, and create a rolling average.
 
   userInputArray[arrayPos] = analogRead(A0);
   arrayPos += 1;
