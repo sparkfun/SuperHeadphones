@@ -28,8 +28,8 @@ your listening experiece can be useful in many other situations.
 
 ### Headphones
 
-For this project, we chose "over-the-ear" headphone that provide a large amount of 
-sound dapening (30dB). These types of headphones are also called "ear muffs" and are 
+For this project, we chose over-the-ear headphone that provide a large amount of 
+sound dapening (30dB). These types of headphones are also called ear-muffs and are 
 often marketed for use during loud construction work or lawn mowing. 
 
 The exact headphones we chose to start with were the following:
@@ -54,12 +54,14 @@ a lot of testing. More on this later.
 
 ### The Modification
 
-In addition to sound dampening, the headphones also included the ability to listen 
+In addition to sound dampening, the original electronics included the ability to listen 
 to FM radio and plug in a TRS 3.5mm audio cable. In this tutorial, we will remove 
 the stock electronics and replace them with the SparkFun ESP32 Thing Plus and the 
 WM8960 Audio Codec. The following two pictures show a comparison of the orginal
 electronics (blue) and our new version (green/red/black). We took pictures of the
-topside and backside of each for a more thorough comparison. The new version actually 
+topside and backside of each for a more thorough comparison. 
+
+The new version actually 
 includes three PCBs. The red microcontroller is the SparkFun Thing Plus ESP32. 
 The black PCB is an early protoype of the SparkFun Audio Codec Breakout. The 
 green PCB below is a custom "mother board" that makes some connections between
@@ -138,22 +140,6 @@ help with learning or re-freshing these assembly skills.
 * Dremel or similar tool for cutting out holes for ambient mics
 
 ### Suggested Reading
-
-If you aren't familiar with the Qwiic Connection System, we recommend reading [here for an overview](https://www.sparkfun.com/qwiic).
-
-<div style="text-align: center">
-  <table style="border-style:none">
-    <tr>
-     <td style="text-align: center; vertical-align: middle;">
-     <div style="text-align: center"><a href="https://www.sparkfun.com/qwiic"><img src="../assets/Qwiic-registered-updated.png" alt="Qwiic Connection System" title="Click to learn more about the Qwiic Connection System!"></a>
-     </div>
-    </td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;"><div style="text-align: center"><i><a href="https://www.sparkfun.com/qwiic">Qwiic Connection System</a></i></div></td>
-    </tr>
-  </table>
-</div>
 
 If you aren’t familiar with the following concepts, we also recommend checking out a few of these tutorials before continuing.
 

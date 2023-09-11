@@ -120,3 +120,39 @@ resistor as close to the microphone as possible. The left microphone is the only
 one that is more suseptable to picking up noise, and so we found that having the 
 pull-down in that ear-can (and using a sheilded mic cable) elliminated any unwanted 
 noise.
+
+As a side note, the proximity of the pull-down resistor to the microphone also 
+had an effect on the acoustic overload point (AOP). Strangely, if the the resistor 
+was placed too far away, then the mics begin clipping at lower sound source volumes. 
+During my early testing, I would hear clipping in my left ear when I really played 
+hard on the hi-hats (which are probably the loudest and closest drum instrument to that 
+microphone). But as soon as I moved the pull-down closer to the mic, the clipping 
+went away!
+
+Here is some close up shots of where I ended up hacking in the final position of 
+each pull-down resistor. Note, I didn't have the exact 5.6K resistors required, so 
+for the left ear, I used two 2.2Ks in series. And for the right, I used a 4.7K. 
+
+<div class="grid cards" markdown align="center">
+
+-   <a href="../assets/img/left_pull_down.jpg">
+	<figure markdown>
+	![Headphones](../assets/img/left_pull_down_600wide.jpg)
+	</figure>
+    </a>
+
+    ---
+        
+    **Left mic pull-down resistor**</a>
+
+-   <a href="../assets/img/right_pull_down.jpg">
+	<figure markdown>
+	![Headphones](../assets/img/right_pull_down_600wide.jpg)
+	</figure>
+    </a>
+
+    ---
+    
+    **Right mic pull-down resistor**</a>
+
+</div>
