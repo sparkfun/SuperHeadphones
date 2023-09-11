@@ -254,9 +254,9 @@ nav:
     - Introduction: introduction.md
     - Hardware Overview: hardware_overview.md
     - Installing Arduino Libraries: arduino_library.md
-    - Arduino Code: arduino_examples.md
+    - Arduino Code: arduino_code.md
     - Microphone Testing: microphone_testing.md
-    - Custom Molded Headset: custom_molded_headset.md
+    - What's Next: whats_next.md
   - Resources: resources.md
   - Support:
     - Troubleshooting: troubleshooting.md
