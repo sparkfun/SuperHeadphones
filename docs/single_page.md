@@ -11,19 +11,20 @@ icon: fontawesome/solid/scroll
 # Hardware Overview
 --8<-- "./docs/hardware_overview.md:5"
 
-# Hardware Assembly
---8<-- "./docs/hardware_assembly.md:5"
+# Installing Arduino Libraries
+--8<-- "./docs/arduino_library.md:5"
 
-# <Product Name> Arduino Library
+## Arduino Code
+--8<-- "./docs/arduino_code.md:5"
 
-## Software Setup
---8<-- "./docs/software_setup.md:5"
+## Microphone Testing
+--8<-- "./docs/microphone_testing.md"
 
-## Arduino Examples
---8<-- "./docs/examples.md"
+## What's next
+--8<-- "./docs/whats_next.md"
 
 # Troubleshooting Tips
---8<-- "./docs/troubleshooting_tips.md:5"
+--8<-- "./docs/troubleshooting.md:5"
 
 # Resources:
 --8<-- "./docs/resources.md"

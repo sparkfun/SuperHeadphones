@@ -1,14 +1,23 @@
 # Resources
 <!-- This section should include all the relevant documentation and product files (Eagle files, schematic, datasheet(s), landing pages, etc. and any relevant tutorials to go beyond the Hookup Guide.) -->
 
-For more resources related to the <Product Name>, check out the links listed here: 
+For more resources related to this project, check out the links listed here: 
 
-* [Product Page](https://www.sparkfun.com/products/<SKU Number>)
-* [Schematic](./board_files/schematic.pdf) (PDF)
-* [Eagle Files](./board_files/eagle_files.zip) (ZIP)
-* [Board Dimensions](./board_files/dimensions.pdf) (PDF)
-* [Graphical Datasheet](./board_files/graphical_datasheet.pdf) (PDF)
-* [<Product Name> Datasheet](./component_documentation/<Product Name>.pdf) (PDF)
-* [<Product Name> Arduino Library](https://github.com/sparkfun/<Arduino Library Name>) *(if applicable)*
-* [Hardware GitHub Respository](https://github.com/sparkfun/<GitHub Repo Name>)
-* [SFE Product Showcase](<Video Webpage>)
+* Custom Mother-board PCB
+    * [Schematic](../assets/board_files/Super_Headphones_Schematic_v20.pdf) (PDF)
+    * [Eagle Files](../assets/board_files/Super_Headphones_Eagle_Files_v20.zip) (ZIP)
+    * [Board Dimensions](../assets/board_files/Super_Headphones_Dimensions.png) (PNG)
+    * [Board Dimensions](../assets/board_files/Super_Headphones_Dimensions.pdf) (PDF)
+* Audio Codec
+    * [SparkFun Audio Codec Breakout - WM8960 (Qwiic) [BOB-21250]](https://www.sparkfun.com/products/21250)
+    * [Hookup Guide](https://learn.sparkfun.com/tutorials/audio-codec-breakout---wm8960-hookup-guide)
+    * [Github Hardware Repo](https://github.com/sparkfun/SparkFun_Audio_Codec_Breakout_WM8960)
+    * [Arduino Library](https://github.com/sparkfun/SparkFun_WM8960_Arduino_Library)
+    * [SFE WM8960 Product Showcase](https://www.youtube.com/embed/NvHIXSyEeDA)
+* ESP32 Thing Plus
+    * [SparkFun Thing Plus - ESP32 WROOM (USB-C) [WRL-20168]](https://www.sparkfun.com/products/20168)
+    * [Hookup Guide](https://learn.sparkfun.com/tutorials/esp32-thing-plus-usb-c-hookup-guide)
+    * [Github Hardware Repo](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C)
+* General
+    * [AOM-5035 Microphone Datasheet](../assets/component_documentation/PUI_Audio_AOM-5035L-HD3-LW100-R.pdf) (PDF)
+    * [App Note on Mic Specs AN-1112-v1.1](../assets/component_documentation/AN-1112-v1.1.pdf) (PDF)

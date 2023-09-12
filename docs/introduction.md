@@ -8,9 +8,9 @@ your listening experiece can be useful in many other situations.
 
 <div class="grid cards" markdown align="center">
 
--   <a href="../assets/img/hps_1500wide.jpg">
+-   <a href="../assets/img/hp_rotate1.gif">
 	<figure markdown>
-	![Headphones](../assets/img/hps_315wide.jpg)
+	![Headphones](../assets/img/hp_rotate1.gif)
 	</figure>
 
     ---
