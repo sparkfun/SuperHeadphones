@@ -176,7 +176,7 @@ To follow along with this tutorial, you will need the following materials. You m
     * [Smoostart Am/Fm Radio Hearing Protector, Noise Reduction Safety Ear Muffs, 30db Noise Cancelling Ear Protection](https://www.amazon.com/Smoostart-Cancelling-Protection-Snowblowing-Construction/dp/B08M95FP4X)
     * [PROTEAR Digital AM FM Radio Headphones, 25dB NRR Ear Protection Safety Ear Muffs](https://www.amazon.com/dp/B09ZPBM9F2/)   
 * 2x [Ambient Microphones [PUI-AOM-5053L-HD3-LW100-R]](https://www.digikey.com/en/products/detail/pui-audio-inc/AOM-5035L-HD3-LW100-R/16585488) 
-* 1x [Custom "mother board" PCB (open-source design on github here) [Order from your favorit fab house!]](https://github.com/sparkfun/SuperHeadphones)
+* 1x [Custom "mother board" PCB (open-source design on github here) [Order from your favorit fab house!]](../assets/board_files/Super_Headphones_Eagle_Files_v20.zip)
 * 1x USB-C cable
     * Our [USB 2.0 A to C Cable [CAB-15092]](https://www.sparkfun.com/products/15092) will do nicely
     * Our [USB 3.1 A to C Cable [CAB-14743]](https://www.sparkfun.com/products/14743) is a good choice too
@@ -185,6 +185,8 @@ To follow along with this tutorial, you will need the following materials. You m
 * 2x [Break Away Male Headers - Right Angle [PRT-00553]](https://www.sparkfun.com/products/553)
 
 * 1x [PET Expandable Braided Sleeving](https://www.amazon.com/Aibole-Black%EF%BC%86Blue-Automotive-Expandable-Sleeving/dp/B07FTPZ7T3/)
+* 1x [3.5mm Audio Jack (SMD)](https://www.digikey.com/en/products/detail/cui-devices/SJ-3523-SMT-TR/281297)
+* 1x [Potentiometer with switch](https://www.mouser.com/ProductDetail/Bourns/PTR902-2015F-A203?qs=7W50F6w4%252BW01n5myfufUyw%3D%3D)
 
 
 ### Tools
