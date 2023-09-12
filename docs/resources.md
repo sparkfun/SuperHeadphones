@@ -19,5 +19,8 @@ For more resources related to this project, check out the links listed here:
     * [Hookup Guide](https://learn.sparkfun.com/tutorials/esp32-thing-plus-usb-c-hookup-guide)
     * [Github Hardware Repo](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C)
 * General
+    * [Block Diagram](../assets/img/Super_Headphones_Block_Diagram_v01.jpg)
+    * [Wiring Diagram](../assets/img/SuperHeadphones_Wiring_Diagram.jpg)
+    * [Mic Circuit](../assets/img/mic_circuit.png)
     * [AOM-5035 Microphone Datasheet](../assets/component_documentation/PUI_Audio_AOM-5035L-HD3-LW100-R.pdf) (PDF)
     * [App Note on Mic Specs AN-1112-v1.1](../assets/component_documentation/AN-1112-v1.1.pdf) (PDF)
