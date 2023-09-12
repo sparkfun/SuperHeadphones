@@ -78,19 +78,60 @@ Knob, nut, and 4 mounting screws removed.
 </figcaption>
 </figure>
 
+## Custom PCB Assembly
+
+Note, the custom PCB is not 100% necessary to complete this project. My early prototype 
+"V2" was a hand-wired version. If you with to go that route, then referencing the 
+[custom PCB Scematic PDF](../assets/board_files/Super_Headphones_Schematic_v20.pdf) 
+would be a good guide.
+
+If you do decided to order the custom PCB (or a version of your own), the "mother 
+board" PCB will need some assembly too: 
+
+* Use headers to solder in the Audio Codec and ESP32 Thing Plus.
+
+* Solder into place the PTH right-angled potentiometer/switch.
+
+* Solder into place the SMD 3.5mm TRS Audio input connector.
+
+<div class="grid cards" markdown align="center">
+
+-   <a href="../assets/img/v2_hand_wired.jpg">
+	<figure markdown>
+	![Headphones](../assets/img/v2_hand_wired_315wide.jpg)
+	</figure>
+
+    ---
+        
+    **Early prototype V2**</a>
+
+-   <a href="../assets/img/custom_pcb.jpg">
+	<figure markdown>
+	![Headphones](../assets/img/custom_pcb_315wide.jpg)
+	</figure>
+
+    ---
+        
+    **Bare custom PCB**</a>
+
+-   <a href="../assets/img/custom_pcb_assembled.jpg">
+	<figure markdown>
+	![Headphones](../assets/img/custom_pcb_assembled_315wide.jpg)
+	</figure>
+
+    ---
+        
+    **Assembled custom PCB**</a>
+
+</div>
+
+
 ## Wiring Diagram
 
-Once everything is opened up, you can begin wiring up the necessary connections. 
-Here is a wiring diagram to show all the connections in one place. 
+Once everything is opened up, and you have your custom PCB assembled, you can 
+begin wiring up the remaining necessary connections: microphones, speakers and battery.
 
-<figure markdown>
-[![Headphones](../assets/img/SuperHeadphones_Wiring_Diagram_600wide.jpg){ width="600" }](../assets/img/SuperHeadphones_Wiring_Diagram.jpg "Click to enlarge")
-<figcaption markdown>
-Wiring Diagram. Lots to hook up!
-</figcaption>
-</figure>
-
-Three important things to remember:
+Before you dive into soldering things up, here are three important things to remember:
 
 * Use 26 guage wire for most of the connections, as it can get fairly tight in there. 
 I used an old ethenet cable which had 8 conductors. If you open those up, the resulting 
@@ -102,6 +143,19 @@ sounds like distant radio stations and creeping whining noises with varying freq
 Kind of fun, but not ideal for every listening experience.
 
 * The microphones we ultimately chose require a specific power and signal circuit (see below). 
+
+
+Here is a wiring diagram to show all 
+the connections in one place: 
+
+<figure markdown>
+[![Headphones](../assets/img/SuperHeadphones_Wiring_Diagram_600wide.jpg){ width="600" }](../assets/img/SuperHeadphones_Wiring_Diagram.jpg "Click to enlarge")
+<figcaption markdown>
+Wiring Diagram. Lots to hook up!
+</figcaption>
+</figure>
+
+
 
 ## Microphone Circuit
 

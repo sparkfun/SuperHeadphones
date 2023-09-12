@@ -26,6 +26,68 @@ your listening experiece can be useful in many other situations.
 
 </div>
 
+### Background
+
+The first prototype design was 
+sparked up around the time I was designing the [Qwiic Speaker Amp](https://www.sparkfun.com/products/20690) 
+in August of 2022. Now, over a year later, it has been through three major versions: 
+
+<div class="grid cards" markdown align="center">
+
+-   <a href="../assets/img/history1.jpg">
+	<figure markdown>
+	![Headphones](../assets/img/history1_315wide.jpg)
+	</figure>
+
+    ---
+        
+    **August 2022 - "V1" Qwiic Speaker Amp.**</a>
+
+-   <a href="../assets/img/history2.jpg">
+	<figure markdown>
+	![Headphones](../assets/img/history2_315wide.jpg)
+	</figure>
+
+    ---
+    
+    **November 2022 - "V2" WM8960 codecs.**</a>
+
+-   <a href="../assets/img/history3.jpg">
+	<figure markdown>
+	![Headphones](../assets/img/history3_315wide.jpg)
+	</figure>
+
+    ---
+    
+    **February 2023 - "V3" Custom PCB.**</a>
+
+</div>
+
+With this project, I was trying to solve three problems:
+
+(1) I want to be able to lower all barriers to practicing music. The less things I have to setup, the better!
+
+(2) When I play drums, I need to protect my ears from getting damaged from exposure to extremely loud sounds. To do this, I usually wear in-ear monitors (IEMs). IEMs are kind of like headphones, but they are more like earbuds. They are usually custom-molded to your ear canal. In this way, they are actually working much like ear plugs and blocking out loud sounds while still providing sound to your ears. In order to get a great monitor mix, I then need to set up mics and a sound mixer. You can accomplish this with headphones too, but most do not provide a safe amount of sound-isolation. IEMs are great, but they are also very expensive. They can range from 300 to 3,000. 
+
+(3) My eight year old son is playing loud music more and more (acoustic drums, amplified guitar and keyboards), and I want him to be able to protect his hearing while still being able to rock out and hear the music clearly. Over-the-ear hearing protection (aka “Ear Muffs”), do a great job of protecting your hearing, but they also dampen the sound way too much. In addition to missing out on many of the mid and high frequencies, it can be very difficult to hear your own instrument and even your band mates.
+
+My idea of a perfect solution: 
+
+* Over-the-ear headphones that have stereo ambient mics to mix in!
+
+* Very easy to “pop on”, with no cables attached. Nothing to wire up, just pop them on and go.
+
+* Mix in a desired level of the ambient mics using a single knob, essentially a “more ears” knob - write there on my headphones, at the ready to adjust as needed.
+
+* Battery powered, 100% self contained, wireless. During some jam sessions with the kiddos we will quickly trade instruments. We need to be able to jump around the room, free from wires and/or plugging and unplugging things.
+
+* The ability to mix in a line level audio source (for practice tracks or other monitor signals from a mixer). This could come in handy for more advanced monitor sound system setups, where maybe I am getting a feed from the mixer that contains the rest of the musicians I am playing with.
+
+* And icing on the cake, a Bluetooth optional input. 
+This last thing was really more useful for me during my solo practice sessions. I can load my phone up with my practice tracks and wirelessly connect to my headphones. Also, of course, useful for general listening.
+
+
+
 ### Headphones
 
 For this project, we chose over-the-ear headphone that provide a large amount of 
