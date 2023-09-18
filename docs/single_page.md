@@ -17,8 +17,8 @@ icon: fontawesome/solid/scroll
 ## Arduino Code
 --8<-- "./docs/arduino_code.md:5"
 
-## Microphone Testing
---8<-- "./docs/microphone_testing.md"
+## Microphone Selection
+--8<-- "./docs/microphone_selection.md"
 
 ## What's next
 --8<-- "./docs/whats_next.md"

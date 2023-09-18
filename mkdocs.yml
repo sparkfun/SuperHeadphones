@@ -255,7 +255,7 @@ nav:
     - Hardware Overview: hardware_overview.md
     - Installing Arduino Libraries: arduino_library.md
     - Arduino Code: arduino_code.md
-    - Microphone Testing: microphone_testing.md
+    - Microphone Selection: microphone_selection.md
     - What's Next: whats_next.md
   - Resources: resources.md
   - Support:

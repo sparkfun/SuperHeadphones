@@ -1,3 +1,5 @@
+### Specifications
+
 For this particular project, we needed a microphone with three specific characteristics:
 
 (1) It needed to have a high acoustic overload point (AOP). This would allow the microphones 
@@ -92,7 +94,7 @@ the others options, and how they compare in terms of mic specs.
 </div>
 
 
-### Microphone options
+### Options
 
 Here are the four microphones we ultimately tested. Note, although for our application, 
 the AOM-5035 was the right choice, you might like to consider trying out some of the 
