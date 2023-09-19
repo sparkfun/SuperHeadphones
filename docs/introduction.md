@@ -2,9 +2,9 @@ This tutorial will guide you through how to build your own wireless and/or wired
 
 <div class="grid cards" markdown align="center">
 
--   <a href="../assets/img/hp_rotate1.gif">
+-   <a href="../assets/img/hp_rotate2.gif">
 	<figure markdown>
-	![Headphones](../assets/img/hp_rotate1.gif)
+	![Headphones](../assets/img/hp_rotate2.gif)
 	</figure>
 
     ---
