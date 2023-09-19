@@ -1,7 +1,7 @@
 # Resources
 <!-- This section should include all the relevant documentation and product files (Eagle files, schematic, datasheet(s), landing pages, etc. and any relevant tutorials to go beyond the Hookup Guide.) -->
 
-For more resources related to this project, check out the links listed here: 
+For more resources related to this project, check out the links listed here:
 
 * Custom Mother-board PCB
     * [Schematic](../assets/board_files/Super_Headphones_Schematic_v20.pdf) (PDF)
@@ -11,13 +11,13 @@ For more resources related to this project, check out the links listed here:
 * Audio Codec
     * [SparkFun Audio Codec Breakout - WM8960 (Qwiic) [BOB-21250]](https://www.sparkfun.com/products/21250)
     * [Hookup Guide](https://learn.sparkfun.com/tutorials/audio-codec-breakout---wm8960-hookup-guide)
-    * [Github Hardware Repo](https://github.com/sparkfun/SparkFun_Audio_Codec_Breakout_WM8960)
+    * [GitHub Hardware Repo](https://github.com/sparkfun/SparkFun_Audio_Codec_Breakout_WM8960)
     * [Arduino Library](https://github.com/sparkfun/SparkFun_WM8960_Arduino_Library)
     * [SFE WM8960 Product Showcase](https://www.youtube.com/embed/NvHIXSyEeDA)
 * ESP32 Thing Plus
     * [SparkFun Thing Plus - ESP32 WROOM (USB-C) [WRL-20168]](https://www.sparkfun.com/products/20168)
     * [Hookup Guide](https://learn.sparkfun.com/tutorials/esp32-thing-plus-usb-c-hookup-guide)
-    * [Github Hardware Repo](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C)
+    * [GitHub Hardware Repo](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C)
 * General
     * [Block Diagram](../assets/img/Super_Headphones_Block_Diagram_v01.jpg)
     * [Wiring Diagram](../assets/img/SuperHeadphones_Wiring_Diagram.jpg)

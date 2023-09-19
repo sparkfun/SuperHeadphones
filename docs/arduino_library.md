@@ -10,7 +10,9 @@
 
     ### USB-to-Serial Drivers
 
-    If you've never connected an CH340 device to your computer before, you may need to install drivers for the USB-to-serial converter. Check out our section on "[How to Install CH340 Drivers](https://learn.sparkfun.com/tutorials/sparkfun-serial-basic-ch340c-hookup-guide#drivers-if-you-need-them)" for help with the installation.
+    If you've never connected a CH340 device to your computer before, you may need to install drivers for the USB-to-serial converter. Check out our section on "[How to Install CH340 Drivers](https://learn.sparkfun.com/tutorials/sparkfun-serial-basic-ch340c-hookup-guide#drivers-if-you-need-them)" for help with the installation.
+
+
 
 ### WM8960 Audio Codec
 
@@ -20,7 +22,7 @@ SparkFun has written a library to work with the SparkFun Audio Codec Breakout - 
 
 
 
-### ESP32-A2DP 
+### ESP32-A2DP
 
 Paul Schatzmann has written a library to work with I2S audio and wireless audio (BT) using the ESP32 microcontrollers. To manually install the library, get it from the  [GitHub Repository](https://github.com/pschatzmann/ESP32-A2DP) or download the .ZIP by clicking the button below:
 

@@ -2,26 +2,17 @@
 
 For this particular project, we needed a microphone with three specific characteristics:
 
-(1) It needed to have a high acoustic overload point (AOP). This would allow the microphones 
-to be located on the oustide of the ear-cans, very close to a full-volume acoustic 
-drum set, and still not distort. Our final mic choice has a AOP of 135dB.
+1. ) It needed to have a high acoustic overload point (AOP). This would allow the microphones to be located on the outside of the ear-cans, very close to a full-volume acoustic drum set, and still not distort. Our final mic choice has a AOP of 135dB.
 
-(2) It needed to have a large signal to noise ratio (SNR). This means that the 
-microphone will output a cleaner signal with less "hiss" sound during quiet times. 
-Something with at least 60dB or great would work. Our ultimate choice was for a microphone 
-that had 75db SNR.
+2. ) It needed to have a large signal to noise ratio (SNR). This means that the  microphone will output a cleaner signal with less "hiss" sound during quiet times.  Something with at least 60dB or great would work. Our ultimate choice was for a microphone that had 75dB SNR.
 
-(3) It needed decent sensativity. Something near the range of -35dB would do. Note, 
-when this number gets higher, that means it's more sensative. Because sensativity 
-is almost always expressed as a negative number, that means a "smaller" negative 
-number is more sensative.
+3. ) It needed decent sensitivity. Something near the range of -35dB would do. Note,  when this number gets higher, that means it's more sensitive. Because sensitivity is almost always expressed as a negative number, that means a "smaller" negative number is more sensitive.
 
-To learn more about microphone specifications such as AOP, SNR, sensativity, please 
-check out this very informative document from Invensense here:
+To learn more about microphone specifications such as AOP, SNR, sensitivity, please check out this very informative document from InvenSense here:
 
-[Invensense Application Note AN‐1112, MICROPHONE SPECIFICATIONS EXPLAINED](https://invensense.tdk.com/wp-content/uploads/2015/02/AN-1112-v1.1.pdf)
+[InvenSense Application Note AN‐1112, MICROPHONE SPECIFICATIONS EXPLAINED](https://invensense.tdk.com/wp-content/uploads/2015/02/AN-1112-v1.1.pdf)
 
-I tried three other microphones before I found my favorite. Here is a table to show 
+I tried three other microphones before I found my favorite. Here is a table to show
 the others options, and how they compare in terms of mic specs.
 
 <div style="text-align: center;">
@@ -33,14 +24,14 @@ the others options, and how they compare in terms of mic specs.
             </th>
             <th style="text-align: center; border: solid 1px #cccccc;">SNR
             </th>
-            <th style="text-align: center; border: solid 1px #cccccc;">Sensativity
+            <th style="text-align: center; border: solid 1px #cccccc;">Sensitivity
             </th>
             <th style="text-align: center; border: solid 1px #cccccc;">Notes
             </th>                        
         </tr>
         <tr>
              <td style="text-align: center; border: solid 1px #cccccc;">ICS-40180
-            </td> 
+            </td>
             <td style="text-align: center; border: solid 1px #cccccc;">124dB
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;">65dB
@@ -73,7 +64,7 @@ the others options, and how they compare in terms of mic specs.
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;">-63dB
             </td>
-            <td style="text-align: center; border: solid 1px #cccccc;">With such a high AOP, this mic could definitely handle the loud drums without clipping. This was a huge win, and actually, I used these mics for quite a while. But then I started to notice that during quite times, there was a significant "hiss" in the audio signal. This is because it is, in terms of audio microphones, not very sensative (-63dB). In order to hear the signal at a decent level, I had to add 60-70 dB of gain in the WM8960, which also can add some hiss to the signal.                       
+            <td style="text-align: center; border: solid 1px #cccccc;">With such a high AOP, this mic could definitely handle the loud drums without clipping. This was a huge win, and actually, I used these mics for quite a while. But then I started to notice that during quite times, there was a significant "hiss" in the audio signal. This is because it is, in terms of audio microphones, not very sensitive (-63dB). In order to hear the signal at a decent level, I had to add 60dB to 70dB of gain in the WM8960, which also can add some hiss to the signal.                       
 
             </td>
         </tr>
@@ -86,7 +77,7 @@ the others options, and how they compare in terms of mic specs.
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;">-35dB
             </td>
-            <td style="text-align: center; border: solid 1px #cccccc;">The best combination of high AOP, impressive sensativity and SNR. No clipping and no hiss. This one fits the job!                    
+            <td style="text-align: center; border: solid 1px #cccccc;">The best combination of high AOP, impressive sensitivity and SNR. No clipping and no hiss. This one fits the job!                    
 
             </td>
         </tr>
@@ -94,12 +85,10 @@ the others options, and how they compare in terms of mic specs.
 </div>
 
 
+
 ### Options
 
-Here are the four microphones we ultimately tested. Note, although for our application, 
-the AOM-5035 was the right choice, you might like to consider trying out some of the 
-other mics and see if they work for your use case. If I were making these for playing 
-piano or any kind of quieter environment, I might go with one of the MEMs.
+Here are the four microphones we ultimately tested. Note, although for our application, the AOM-5035 was the right choice, you might like to consider trying out some of the other mics and see if they work for your use case. If I were making these for playing piano or any kind of quieter environment, I might go with one of the MEMs.
 <div class="grid cards hide col-4" markdown>
 
 -   <a href="https://www.sparkfun.com/products/18011">
@@ -153,7 +142,9 @@ piano or any kind of quieter environment, I might go with one of the MEMs.
     ---
 
     <a href="https://www.digikey.com/en/products/detail/pui-audio-inc/AOM-5035L-HD3-LW100-R/16585488">
-      <b>PUI Audio AOM-5035L-HD3-LW100-R</b>
+      <b>PUI Audio: MIC ANLG OMNI -35DB</b>
+      <br />
+      AOM-5035L-HD3-LW100-R
     </a>
 <!-- ----------WHITE SPACE BETWEEN PRODUCTS---------- -->
 
