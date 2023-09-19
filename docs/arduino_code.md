@@ -9,7 +9,7 @@ Below is the Arduino sketch INO for this project. Copy and paste the code below 
 ??? code "Example 1: ENS160 and BME280 Combined Examples"
     === "Ex1_Combined_Basic_Example_ENS160_BME280.ino"
         ``` c++ linenums="1"
-        --8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Environmental_Combo_Breakout_ENS160_BME280_QWIIC/main/Firmware/Ex1_Combined_Basic_Example_ENS160_BME280/Ex1_Combined_Basic_Example_ENS160_BME280.ino"
+        --8<-- "https://raw.githubusercontent.com/sparkfun/SuperHeadphones/main/Arduino_Code/Super_Headphones_BT_and_MIC_V2.0/Super_Headphones_BT_and_MIC_V2.0.ino"
         ```
 
 Select your board in the Tools menu (in our case **ESP32 Thing Plus**) and the correct Port it enumerated on and click "Upload". After uploading the code, open the [Serial Monitor](https://learn.sparkfun.com/tutorials/terminal-basics) or terminal emulator of your choice with the baud rate set to **115200**. You should see the following message pop up. And then as you turn the volume potentiometer, the setting value will be printed to the terminal.
