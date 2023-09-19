@@ -3,7 +3,7 @@
 
     ### Arduino IDE
 
-    This example assumes you are using the latest version of the Arduino IDE on your desktop. If this is your first time using Arduino IDE and an library, please review the following tutorials.
+    This example assumes you are using the latest version of the Arduino IDE on your desktop. If this is your first time using Arduino IDE and a library, please review the following tutorials.
 
     - [Installing the Arduino IDE](https://learn.sparkfun.com/tutorials/installing-arduino-ide)
     - [Installing an Arduino Library](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)

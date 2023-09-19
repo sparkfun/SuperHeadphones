@@ -22,7 +22,7 @@ Select your board in the Tools menu (in our case **ESP32 Thing Plus**) and the c
   </table>
 </div>
 
-If you see the above messages in your terminal, then you should be ready to try out some listening. Put your headphones on and try adjusting the potentiometer. As you turn the knob (clock-wise), this will increase the volume level of the microphones.
+If you see the above messages in your terminal, then you should be ready to try out some listening. Put your headphones on and try adjusting the potentiometer. As you turn the knob (clockwise), this will increase the volume level of the microphones.
 
 One way to verify the system is to turn the volume all the way up and gently rub each microphone with your fingertip. You should hear a quiet scratching sound in the corresponding headphone ear speaker.
 
@@ -56,7 +56,7 @@ After powering up your headphones, use your PC or cell phone to find a Bluetooth
 
     ---
 
-    **Connect to BT with your cellphone**</a>
+    **Connect to BT with your cell phone**</a>
 
 </div>
 
@@ -83,6 +83,6 @@ sketches. Review these for further information on how each section of the code w
 
     * [bt_music_receiver_simple](https://github.com/pschatzmann/ESP32-A2DP/blob/main/examples/bt_music_receiver_simple/bt_music_receiver_simple.ino)
 
-    * [I2S pin defnition](https://github.com/pschatzmann/ESP32-A2DP/tree/main#defining-pins)
+    * [I2S pin definition](https://github.com/pschatzmann/ESP32-A2DP/tree/main#defining-pins)
 
     * [I2S configuration](https://github.com/pschatzmann/ESP32-A2DP/tree/main#using-your-specific-i2s_config)

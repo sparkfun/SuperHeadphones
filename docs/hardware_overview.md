@@ -28,7 +28,7 @@ Exploded view of the headphone system.
 
 ## Foam Removal
 
-Removing the foam was pretty straight forward. You can use a flat head screw driver or pliers, but be careful. As you can see, I accidentally ripped the foam apart when I pulled a bit too hard.  
+Removing the foam was pretty straight forward. You can use a flat head screwdriver or pliers, but be careful. As you can see, I accidentally ripped the foam apart when I pulled a bit too hard.  
 
 <figure markdown>
 [![Headphones](../assets/img/foam_ripped_600wide.jpg){ width="600" }](../assets/img/foam_ripped.jpg "Click to enlarge")
@@ -37,7 +37,7 @@ Oops! I accidentally ripped the foam.
 </figcaption>
 </figure>
 
-It's really best to take it slowly and pull it gently, little-by-little. I really got the hang of this by the end of this project. I must have taken mine apart nearly 50 times as I fine tuned the wiring and swapped out microphones during testing. Hopefully, by reading this tutorial, you can keep this dis-assembly and re-assembly cycle to a minimum. :)
+It's really best to take it slowly and pull it gently, little-by-little. I really got the hang of this by the end of this project. I must have taken mine apart nearly 50 times as I fine tuned the wiring and swapped out microphones during testing. Hopefully, by reading this tutorial, you can keep this dis-assembly and reassembly cycle to a minimum. :)
 
 
 
@@ -52,7 +52,7 @@ Two small screws hold the cans together.
 </figcaption>
 </figure>
 
-The screws are located back behind the black plastic. Because of the angle, they can be a little difficult to access, but with a small Phillips head screw driver and the right amount of pressure, it can be done.
+The screws are located back behind the black plastic. Because of the angle, they can be a little difficult to access, but with a small Phillips head screwdriver and the right amount of pressure, it can be done.
 
 
 

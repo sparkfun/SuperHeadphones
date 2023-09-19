@@ -2,7 +2,7 @@
 
 For this particular project, we needed a microphone with three specific characteristics:
 
-1. ) It needed to have a high acoustic overload point (AOP). This would allow the microphones to be located on the outside of the ear-cans, very close to a full-volume acoustic drum set, and still not distort. Our final mic choice has a AOP of 135dB.
+1. ) It needed to have a high acoustic overload point (AOP). This would allow the microphones to be located on the outside of the ear-cans, very close to a full-volume acoustic drum set, and still not distort. Our final mic choice has an AOP of 135dB.
 
 2. ) It needed to have a large signal to noise ratio (SNR). This means that the  microphone will output a cleaner signal with less "hiss" sound during quiet times.  Something with at least 60dB or great would work. Our ultimate choice was for a microphone that had 75dB SNR.
 
@@ -38,7 +38,7 @@ the others options, and how they compare in terms of mic specs.
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;">−38dB
             </td>
-            <td style="text-align: center; border: solid 1px #cccccc;">With the onboard opamp gain, this ultimately had too low of an resulting AOP for drums. It clipped a lot when I played loudly.                    
+            <td style="text-align: center; border: solid 1px #cccccc;">With the onboard op amp gain, this ultimately had too low of an resulting AOP for drums. It clipped a lot when I played loudly.                    
 
             </td>
         </tr>
@@ -51,7 +51,7 @@ the others options, and how they compare in terms of mic specs.
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;">-44dB
             </td>
-            <td style="text-align: center; border: solid 1px #cccccc;">Again, with the onboard opamp gain, this ultimately had too low of an AOP for drums. It clipped a lot when I played loudly.                             
+            <td style="text-align: center; border: solid 1px #cccccc;">Again, with the onboard op amp gain, this ultimately had too low of an AOP for drums. It clipped a lot when I played loudly.                             
 
             </td>
         </tr>
@@ -64,7 +64,7 @@ the others options, and how they compare in terms of mic specs.
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;">-63dB
             </td>
-            <td style="text-align: center; border: solid 1px #cccccc;">With such a high AOP, this mic could definitely handle the loud drums without clipping. This was a huge win, and actually, I used these mics for quite a while. But then I started to notice that during quite times, there was a significant "hiss" in the audio signal. This is because it is, in terms of audio microphones, not very sensitive (-63dB). In order to hear the signal at a decent level, I had to add 60dB to 70dB of gain in the WM8960, which also can add some hiss to the signal.                       
+            <td style="text-align: center; border: solid 1px #cccccc;">With such a high AOP, this mic could definitely handle the loud drums without clipping. This was a huge win, and actually, I used these mics for quite a while. But then I started to notice that during quiet times, there was a significant "hiss" in the audio signal. This is because it is, in terms of audio microphones, not very sensitive (-63dB). In order to hear the signal at a decent level, I had to add 60dB to 70dB of gain in the WM8960, which also can add some hiss to the signal.                       
 
             </td>
         </tr>

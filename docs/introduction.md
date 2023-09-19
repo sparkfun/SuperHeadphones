@@ -59,7 +59,7 @@ The first prototype design was sparked up around the time I was designing the [Q
 
 With this project, I was trying to solve three problems:
 
-1. ) I want to be able to lower all barriers to practicing music. The less things I have to setup, the better!
+1. ) I want to be able to lower all barriers to practicing music. The less things I have to set up, the better!
 
 2. ) When I play drums, I need to protect my ears from getting damaged from exposure to extremely loud sounds. To do this, I usually wear in-ear monitors (IEMs). IEMs are kind of like headphones, but they are more like earbuds. They are usually custom-molded to your ear canal. In this way, they are actually working much like ear plugs and blocking out loud sounds while still providing sound to your ears. In order to get a great monitor mix, I then need to set up mics and a sound mixer. You can accomplish this with headphones too, but most do not provide a safe amount of sound-isolation. IEMs are great, but they are also very expensive. They can range from $300 to $3,000.
 
@@ -83,12 +83,12 @@ My idea of a perfect solution:
 
 ### Headphones
 
-For this project, we chose over-the-ear headphone that provide a large amount of sound dampening (30dB). These types of headphones are also called ear-muffs and are often marketed for use during loud construction work or lawn mowing.
+For this project, we chose over-the-ear headphones that provide a large amount of sound dampening (30dB). These types of headphones are also called ear-muffs and are often marketed for use during loud construction work or lawn mowing.
 
 The exact headphones we chose to start with were the following:
 
 <center>
-[Smoostart Am/Fm Radio Hearing Protector, Noise Reduction Safety Ear Muffs, 30dB Noise Cancelling Ear Protection](https://www.amazon.com/Smoostart-Cancelling-Protection-Snowblowing-Construction/dp/B08M95FP4X){ .md-button .md-button--primary }
+[Smoostart Am/Fm Radio Hearing Protector, Noise Reduction Safety Ear Muffs, 30dB Noise Canceling Ear Protection](https://www.amazon.com/Smoostart-Cancelling-Protection-Snowblowing-Construction/dp/B08M95FP4X){ .md-button .md-button--primary }
 </center>
 
 When using this type of lawn-mowing headphones without any modification, they provide adequate sound dampening to protect your ears in extremely loud places. However, with this benefit, you also lose the ability to hear your natural surroundings clearly. Usually, it is described as sounding a bit like two pillows are held to either ear. This is because the passive sound dampening is blocking most of the high frequencies.
@@ -101,7 +101,7 @@ In order to get the sound clarity back, we need to use ambient microphones. The 
 
 In addition to sound dampening, the original electronics included the ability to listen to FM radio and plug in a 3.5mm TRS audio cable. In this tutorial, we will remove the stock electronics, and replace them with the SparkFun ESP32 Thing Plus and the WM8960 Audio Codec. The following two pictures show a comparison of the original electronics (blue) and our new version (green/red/black). We took pictures of the topside and backside of each for a more thorough comparison.
 
-The new version actually includes three PCBs. The red microcontroller is the SparkFun Thing Plus ESP32. The black PCB is an early prototype of the SparkFun Audio Codec Breakout. The green PCB below is a custom "mother board" that makes some connections between the two dev boards and provides the on/off/volume knob, 3.5mm TRS input, and mounting holes to mount this entire assembly into headphone can.
+The new version actually includes three PCBs. The red microcontroller is the SparkFun Thing Plus ESP32. The black PCB is an early prototype of the SparkFun Audio Codec Breakout. The green PCB below is a custom "motherboard" that makes some connections between the two dev boards and provides the on/off/volume knob, 3.5mm TRS input, and mounting holes to mount this entire assembly into headphone can.
 
 <div class="grid cards" markdown align="center">
 
@@ -146,10 +146,10 @@ To follow along with this tutorial, you will need the following materials. You m
 * 1x [SparkFun Thing Plus - ESP32 WROOM (USB-C) [WRL-20168]](https://www.sparkfun.com/products/20168)
 * 1x [SparkFun Audio Codec Breakout - WM8960 (Qwiic) [BOB-21250]](https://www.sparkfun.com/products/21250)
 * 1x Set of "Mowing" Headphones aka "ear muffs"
-    * [Smoostart Am/Fm Radio Hearing Protector, Noise Reduction Safety Ear Muffs, 30dB Noise Cancelling Ear Protection](https://www.amazon.com/Smoostart-Cancelling-Protection-Snowblowing-Construction/dp/B08M95FP4X)
+    * [Smoostart Am/Fm Radio Hearing Protector, Noise Reduction Safety Ear Muffs, 30dB Noise Canceling Ear Protection](https://www.amazon.com/Smoostart-Cancelling-Protection-Snowblowing-Construction/dp/B08M95FP4X)
     * [PROTEAR Digital AM FM Radio Headphones, 25dB NRR Ear Protection Safety Ear Muffs](https://www.amazon.com/dp/B09ZPBM9F2/)   
 * 2x [Ambient Microphones [PUI-AOM-5053L-HD3-LW100-R]](https://www.digikey.com/en/products/detail/pui-audio-inc/AOM-5035L-HD3-LW100-R/16585488)
-* 1x [Custom "mother board" PCB (open-source design on GitHub here, you'll just need to order from your favorite fab house!)](../assets/board_files/Super_Headphones_Eagle_Files_v20.zip)
+* 1x [Custom "motherboard" PCB (open-source design on GitHub here, you'll just need to order from your favorite fab house!)](../assets/board_files/Super_Headphones_Eagle_Files_v20.zip)
 * 1x USB-C Cable
     * Our [USB 2.0 A to C Cable [CAB-15092]](https://www.sparkfun.com/products/15092) will do nicely
     * Our [USB 3.1 A to C Cable [CAB-14743]](https://www.sparkfun.com/products/14743) is a good choice too

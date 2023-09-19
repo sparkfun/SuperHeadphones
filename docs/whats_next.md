@@ -1,4 +1,4 @@
-The next generation of super headphones might includes some additional features.
+The next generation of super headphones might include some additional features.
 Here are some of my ideas:
 
 
@@ -86,6 +86,6 @@ Cheers and happy hacking!
 <figure markdown>
 [![Headphones](../assets/img/3d_print_600wide.jpg){ width="600" }](../assets/img/3d_print.jpg "Click to enlarge")
 <figcaption markdown>
-My first print... fresh out of the grey goop!
+My first print... fresh out of the gray goop!
 </figcaption>
 </figure>
