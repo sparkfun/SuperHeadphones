@@ -3,11 +3,19 @@
 
 For more resources related to this project, check out the links listed here:
 
+* General
+    * [Arduino Code](../assets/code/Super_Headphones_BT_and_MIC_V2.0.zip) (ZIP)
+    * [Block Diagram](../assets/img/Super_Headphones_Block_Diagram_v01.jpg) (JPG)
+    * [Wiring Diagram](../assets/img/SuperHeadphones_Wiring_Diagram.jpg) (JPG)
+    * [Mic Circuit](../assets/img/mic_circuit.png) (PNG)
+    * [AOM-5035 Microphone Datasheet](../assets/component_documentation/PUI_Audio_AOM-5035L-HD3-LW100-R.pdf) (PDF)
+    * [App Note on Mic Specs AN-1112-v1.1](../assets/component_documentation/AN-1112-v1.1.pdf) (PDF)
 * Custom Mother-board PCB
     * [Schematic](../assets/board_files/Super_Headphones_Schematic_v20.pdf) (PDF)
     * [Eagle Files](../assets/board_files/Super_Headphones_Eagle_Files_v20.zip) (ZIP)
     * [Board Dimensions](../assets/board_files/Super_Headphones_Dimensions.png) (PNG)
     * [Board Dimensions](../assets/board_files/Super_Headphones_Dimensions.pdf) (PDF)
+    * [Board Dimensions](../assets/board_files/Super_Headphones_Dimensions.dxf) (DXF)
 * Audio Codec
     * [SparkFun Audio Codec Breakout - WM8960 (Qwiic) [BOB-21250]](https://www.sparkfun.com/products/21250)
     * [Hookup Guide](https://learn.sparkfun.com/tutorials/audio-codec-breakout---wm8960-hookup-guide)
@@ -18,9 +26,3 @@ For more resources related to this project, check out the links listed here:
     * [SparkFun Thing Plus - ESP32 WROOM (USB-C) [WRL-20168]](https://www.sparkfun.com/products/20168)
     * [Hookup Guide](https://learn.sparkfun.com/tutorials/esp32-thing-plus-usb-c-hookup-guide)
     * [GitHub Hardware Repo](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C)
-* General
-    * [Block Diagram](../assets/img/Super_Headphones_Block_Diagram_v01.jpg)
-    * [Wiring Diagram](../assets/img/SuperHeadphones_Wiring_Diagram.jpg)
-    * [Mic Circuit](../assets/img/mic_circuit.png)
-    * [AOM-5035 Microphone Datasheet](../assets/component_documentation/PUI_Audio_AOM-5035L-HD3-LW100-R.pdf) (PDF)
-    * [App Note on Mic Specs AN-1112-v1.1](../assets/component_documentation/AN-1112-v1.1.pdf) (PDF)
