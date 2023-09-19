@@ -21,7 +21,9 @@ I have thought that adding a second set of ambient mics with higher sensitivity 
 
 Mixing the two microphones automatically would be ideal. But this would require a rather uncommon effect on the sensitive  mic. You'd have to use an "inverted" noise gate. This would shut down the signal from the sensitive mic when it gets close to its clipping level, and then open up the gate to the high AOP mic at the same time.
 
-It turns out that PUI makes another similar microphone that is 11dB more sensitive, and has a whopping 80dB SNR! See the specs here: [PUI AOM-5024](https://www.digikey.com/en/products/detail/pui-audio-inc/AOM-5024L-HD-F-R/12152286).
+It turns out that PUI makes another similar microphone that is 11dB more sensitive, and has a whopping 80dB SNR! See the specs here:
+
+<div style="text-align: center"><a href="https://www.digikey.com/en/products/detail/pui-audio-inc/AOM-5024L-HD-F-R/12152286" target="pui_microphone" class="md-button">PUI AOM-5024</a></div>
 
 
 

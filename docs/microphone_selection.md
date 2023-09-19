@@ -10,7 +10,7 @@ For this particular project, we needed a microphone with three specific characte
 
 To learn more about microphone specifications such as AOP, SNR, sensitivity, please check out this very informative document from InvenSense here:
 
-[InvenSense Application Note AN‐1112, MICROPHONE SPECIFICATIONS EXPLAINED](https://invensense.tdk.com/wp-content/uploads/2015/02/AN-1112-v1.1.pdf)
+<div style="text-align: center"><a href="https://invensense.tdk.com/wp-content/uploads/2015/02/AN-1112-v1.1.pdf" target="mic_app_note" class="md-button">InvenSense Application Note AN‐1112, MICROPHONE SPECIFICATIONS EXPLAINED</a></div>
 
 I tried three other microphones before I found my favorite. Here is a table to show
 the others options, and how they compare in terms of mic specs.

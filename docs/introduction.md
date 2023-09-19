@@ -87,9 +87,7 @@ For this project, we chose over-the-ear headphones that provide a large amount o
 
 The exact headphones we chose to start with were the following:
 
-<center>
-[Smoostart Am/Fm Radio Hearing Protector, Noise Reduction Safety Ear Muffs, 30dB Noise Canceling Ear Protection](https://www.amazon.com/Smoostart-Cancelling-Protection-Snowblowing-Construction/dp/B08M95FP4X){ .md-button .md-button--primary }
-</center>
+<div style="text-align: center"><a href="https://www.amazon.com/Smoostart-Cancelling-Protection-Snowblowing-Construction/dp/B08M95FP4X" target="smoostart_headphone" class="md-button">Smoostart Am/Fm Radio Hearing Protector, Noise Reduction Safety Ear Muffs, 30dB Noise Canceling Ear Protection</a></div>
 
 When using this type of lawn-mowing headphones without any modification, they provide adequate sound dampening to protect your ears in extremely loud places. However, with this benefit, you also lose the ability to hear your natural surroundings clearly. Usually, it is described as sounding a bit like two pillows are held to either ear. This is because the passive sound dampening is blocking most of the high frequencies.
 
