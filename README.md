@@ -1,7 +1,7 @@
 Super Headphones
 ========================================
 
-[![Super Headphones](../assets/img/history3.jpg)](../assets/img/history3.jpg)
+[![Super Headphones](https://raw.githubusercontent.com/sparkfun/SuperHeadphones/main/docs/assets/img/hp_rotate1.gif)](https://raw.githubusercontent.com/sparkfun/SuperHeadphones/main/docs/assets/img/hp_rotate1.gif)
 
 This GitHub Repository contains all the supporting files to host a tutorial that will guide you through how to build your own wireless and/or wired
 headphones with ambient microphones. We start with some off-the-shelf headphones
