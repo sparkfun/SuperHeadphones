@@ -6,8 +6,8 @@ Now that we have our libraries installed, we can compile and upload the Arduino 
 
 Below is the Arduino sketch INO for this project. Copy and paste the code below in your Arduino IDE.
 
-??? code "Example 1: ENS160 and BME280 Combined Examples"
-    === "Ex1_Combined_Basic_Example_ENS160_BME280.ino"
+??? code "SuperHeadphones Arduino Sketch"
+    === "Super_Headphones_BT_and_MIC_V2.0"
         ``` c++ linenums="1"
         --8<-- "https://raw.githubusercontent.com/sparkfun/SuperHeadphones/main/Arduino_Code/Super_Headphones_BT_and_MIC_V2.0/Super_Headphones_BT_and_MIC_V2.0.ino"
         ```
