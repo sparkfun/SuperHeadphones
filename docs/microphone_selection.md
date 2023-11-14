@@ -89,7 +89,8 @@ the others options, and how they compare in terms of mic specs.
 ### Options
 
 Here are the four microphones we ultimately tested. Note, although for our application, the AOM-5035 was the right choice, you might like to consider trying out some of the other mics and see if they work for your use case. If I were making these for playing piano or any kind of quieter environment, I might go with one of the MEMs.
-<div class="grid cards hide col-4" markdown>
+
+<div class="grid cards col-4" markdown>
 
 -   <a href="https://www.sparkfun.com/products/18011">
       <figure markdown>

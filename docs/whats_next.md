@@ -61,7 +61,7 @@ Cheers and happy hacking!
 
 
 
-<div class="grid cards hide col-4" markdown>
+<div class="grid cards col-4" markdown>
 
 -   <a href="../assets/img/pete_rotate2.gif">
       <figure markdown>

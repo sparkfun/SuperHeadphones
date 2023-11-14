@@ -175,7 +175,7 @@ You will need to solder various connections using hook-up wire, microphone cable
 
 If you aren’t familiar with the following concepts, we also recommend checking out a few of these tutorials before continuing.
 
-<div class="grid cards hide col-4" markdown>
+<div class="grid cards col-4" markdown>
 
 -   <a href="https://learn.sparkfun.com/tutorials/i2c">
       <figure markdown>
