@@ -26,7 +26,7 @@ For more resources related to this project, check out the links listed here:
     * [Hookup Guide](https://learn.sparkfun.com/tutorials/esp32-thing-plus-usb-c-hookup-guide)
     * [GitHub Hardware Repo](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C)
 
-Looking for more information related to the Superheadphones, check out the following IEEE article!
+Looking for more information related to the SuperHeadphones, check out the following IEEE article below!
 
 <div class="grid cards col-4" markdown>
 <!-- ----------WHITE SPACE BETWEEN GRID CARDS---------- -->
