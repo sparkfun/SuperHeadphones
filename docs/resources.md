@@ -25,3 +25,21 @@ For more resources related to this project, check out the links listed here:
     * [SparkFun Thing Plus - ESP32 WROOM (USB-C) [WRL-20168]](https://www.sparkfun.com/products/20168)
     * [Hookup Guide](https://learn.sparkfun.com/tutorials/esp32-thing-plus-usb-c-hookup-guide)
     * [GitHub Hardware Repo](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C)
+
+Looking for more information related to the Superheadphones, check out the following IEEE article!
+
+<div class="grid cards col-4" markdown>
+<!-- ----------WHITE SPACE BETWEEN GRID CARDS---------- -->
+-   <a href="https://spectrum.ieee.org/hi-fi-ear-defenders">
+      <figure markdown>
+        <img src="../assets/img/a-pair-headphones-sitting-on-a-drum-set-with-embedded-microphones-on-each-side.webp" style="width:264px; height:148px; object-fit:contain;" alt="IEEE: Build Your Own Hi-fi Ear Defenders > An inexpensive solution to hearing well in loud environments">
+      </figure>
+    </a>
+
+    ---
+
+    <a href="https://spectrum.ieee.org/hi-fi-ear-defenders">
+      <b>IEEE: Build Your Own Hi-fi Ear Defenders > <br />An inexpensive solution to hearing well in loud environments</b>
+    </a>
+<!-- ----------WHITE SPACE BETWEEN GRID CARDS---------- -->
+</div>
