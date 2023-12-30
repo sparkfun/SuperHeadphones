@@ -32,10 +32,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+//#define BLUETOOTH_ON
+
 #include <Wire.h>
 #include <SparkFun_WM8960_Arduino_Library.h>  // CTRL+Click here to get the library: http://librarymanager/All#SparkFun_WM8960
 WM8960 codec1;
 
+#ifdef BLUETOOTH_ON
 #include "BluetoothA2DPSink.h" // To manually install, download here: https://github.com/pschatzmann/ESP32-A2DP
 BluetoothA2DPSink a2dp_sink;
 
@@ -51,12 +54,20 @@ BluetoothA2DPSink a2dp_sink;
 #define I2S_SDO 14
 #define I2S_SCK 32
 
+// ESP32 C6 SparkFun Pocket Qwiic Dev
+// #define I2S_WS 16
+// #define I2S_SD 17
+// #define I2S_SDO 18
+// #define I2S_SCK 19
+
 // Use I2S Processor 0
 #define I2S_PORT I2S_NUM_0
 
 // Define input buffer length
 #define bufferLen 64
 int16_t sBuffer[bufferLen];
+
+#endif // BLUETOOTH_ON (Setup stuff)
 
 int pgaGain1 = 25;
 
@@ -69,11 +80,17 @@ int arrayPos = 0;
 #define PGA_GAIN_SETTING_MAX 32 // don't really need more than this on the PGA, so let's put a max on it so no one gets too crazy.
 
 void setup() {
+
+  //delay(1000);
+
+  //pinMode(2, INPUT); // needed for ESP32 C6, will be used for volume input on ADC pin
+  
   Serial.begin(115200);
   Serial.println(" ");
 
+  //Wire.begin(18, 19, 100000); // ESP32 C6
   Wire.begin();
-  Wire.setClock(100000);
+  //Wire.setClock(100000);
 
   if (codec1.begin() == false)  //Begin communication over I2C
   {
@@ -85,11 +102,14 @@ void setup() {
 
   codec1_setup();
 
+#ifdef BLUETOOTH_ON
   // Set up I2S
   i2s_install();
   i2s_setpin();
 
-  a2dp_sink.start("SuperHeadphones");
+  a2dp_sink.start("SuperHP 3");
+#endif
+
 }
 
 void loop() {
@@ -101,7 +121,7 @@ void loop() {
   // - loop back position to start of array 
   // - when we reach the end take all readings in array, and create a rolling average.
 
-  userInputArray[arrayPos] = analogRead(A0);
+  userInputArray[arrayPos] = analogRead(2);
   arrayPos += 1;
   if (arrayPos > NUM_OF_READINGS) arrayPos = 0;
   int total = 0;
@@ -127,6 +147,18 @@ void codec1_setup() {
   // General setup needed
   codec1.enableVREF();
   codec1.enableVMID();
+
+  // VREF to Analogue Output Resistance (Disabled Outputs)
+  // 0 = 500 VMID to output
+  // 1 = 20k VMID to output 
+  //codec1.setVROI(WM8960_VROI_500); // default
+  codec1.setVROI(WM8960_VROI_20K);
+
+  // Analogue Bias Optimisation
+  // 01 = Increased bias current optimized for AVDD=2.7V
+  // 1X = Lowest bias current, optimized for AVDD=3.3V 
+  //codec1.setVSEL(WM8960_VSEL_LOWEST_BIAS_CURRENT); // default
+  codec1.setVSEL(WM8960_VSEL_INCREASED_BIAS_CURRENT);
 
   //codec1.enableMicBias();
 
@@ -236,6 +268,7 @@ void codec1_setup() {
   codec1.setRINVOL(23);
 }
 
+#ifdef BLUETOOTH_ON
 void i2s_install() {
   // Set up I2S Processor configuration
   static i2s_config_t i2s_config = {
@@ -246,7 +279,7 @@ void i2s_install() {
     .communication_format = (i2s_comm_format_t)(I2S_COMM_FORMAT_STAND_I2S),
     .intr_alloc_flags = 0,  // Default interrupt priority
     .dma_buf_count = 8,
-    .dma_buf_len = 64,
+    .dma_buf_len = 128,
     .use_apll = true,
     .tx_desc_auto_clear = true  // Avoiding noise in case of data unavailability
   };
@@ -263,3 +296,4 @@ void i2s_setpin() {
   };
   a2dp_sink.set_pin_config(my_pin_config);
 }
+#endif
