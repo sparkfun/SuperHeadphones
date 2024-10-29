@@ -30,7 +30,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  
+
 
   # Features to Include (ref. theme documentation)
   features:
@@ -59,7 +59,7 @@ theme:
 
     # Keeps tabs visible in the header when scrolling
     - navigation.tabs.sticky
-    
+
     # Adds pop-up button just below the header (when the user starts to scroll up)
     # Allows users to easily jump to the beginning of the page
     - navigation.top
@@ -82,7 +82,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       primary: grey
       accent: red
-      scheme: default 
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to system preference
@@ -94,7 +94,7 @@ theme:
       scheme: slate
       toggle:
         icon: material/weather-night
-        name: Switch to light mode    
+        name: Switch to light mode
 
 
   # Configures icons
@@ -104,7 +104,7 @@ theme:
 
     # Sets repo icon to GitHub icon
     repo: fontawesome/brands/github
-    
+
     # Sets icons for "view source" (commented out) and "edit this page" buttons
     edit: material/file-document-edit-outline
     # view: material/file-code-outline
@@ -185,7 +185,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.mark
@@ -228,9 +228,29 @@ extra:
       link: https://www.github.com/sparkfun
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/SparkFun
-    - icon: fontawesome/brands/twitter
+    - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/sparkfun
+    - icon: fontawesome/solid/cookie-bite
+      link: ./#__consent
+      name: Change cookie settings
 
+  # Configures Google Analytics
+  analytics:
+    provider: google
+    property: G-7Y7EYCZVC1
+
+  consent:
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: true
+    title: Cookie consent
+    description:
+      We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.
+    actions:
+      - accept
+      - manage
+      - reject
 
 
 # Configures styling for PDF rendering and webpage layout
