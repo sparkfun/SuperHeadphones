@@ -563,3 +563,47 @@
     overflow: hidden;
   }
 }
+
+
+
+/* ================================================================================== */
+/* Icons                                                                              */
+/* ================================================================================== */
+
+.viewer{
+	position:relative
+}
+
+#pdtViewer{
+	width:85%;
+	max-width: 250px;
+	margin:0
+}
+
+#pdtViewer img{
+	user-select:none;
+	-moz-user-select:none
+}
+
+#dummy{
+	display:none
+}
+
+.loader{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:rgba(0,0,0,.5);
+	z-index:1;
+	top:0
+}
+
+img.draggable{
+	cursor:e-resize
+}
+
+@media screen {
+	#pdtViewer img{
+		width:100%
+	}
+}
