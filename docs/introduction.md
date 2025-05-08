@@ -1,11 +1,12 @@
 This tutorial will guide you through how to build your own wireless and/or wired headphones with ambient microphones. We start with some off-the-shelf headphones intended for use while lawn mowing, and then hack in some new electronics to allow wireless (BT), auxiliary 3.5mm TRS input, and stereo ambient microphones. The original purpose of this project was to make it easy and safe to play loud music with a rock band in the basement, however, the inclusion of the natural sounds around you into your listening experience can be useful in many other situations.
 
+<div id="dummy"></div>
+
 <div class="grid cards" markdown align="center">
 
--   <a href="../assets/img/hp_rotate2.gif">
-	<figure markdown>
-	![Headphones](../assets/img/hp_rotate2.gif)
-	</figure>
+-   <article id="pdtViewer">
+    <article id="product360"></article>
+    </article>
 
     ---
 
