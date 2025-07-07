@@ -48,17 +48,17 @@ BluetoothA2DPSink a2dp_sink;
 //#define I2S_SDO 17
 //#define I2S_SCK 14
 
-// ESP32 Thing Plus C
-#define I2S_WS 13
-#define I2S_SD 27
-#define I2S_SDO 14
-#define I2S_SCK 32
+// ESP32 Thing Plus C ... and ESP32 Thing Plus (usb-microB connector)
+// #define I2S_WS 13
+// #define I2S_SD 27
+// #define I2S_SDO 14
+// #define I2S_SCK 32
 
 // ESP32 C6 SparkFun Pocket Qwiic Dev
-// #define I2S_WS 16
-// #define I2S_SD 17
-// #define I2S_SDO 18
-// #define I2S_SCK 19
+#define I2S_WS 16
+#define I2S_SD 17
+#define I2S_SDO 18
+#define I2S_SCK 19
 
 // Use I2S Processor 0
 #define I2S_PORT I2S_NUM_0
@@ -75,21 +75,21 @@ int pgaGain1_prev = 0;
 
 #define NUM_OF_READINGS 20
 long userInputA0;
-int userInputArray[NUM_OF_READINGS] = {};  // used to make a rolling average of readings on ADC input
+int userInputArray[NUM_OF_READINGS+1] = {};  // used to make a rolling average of readings on ADC input (need +1 to give array enough spots)
 int arrayPos = 0;
-#define PGA_GAIN_SETTING_MAX 32 // don't really need more than this on the PGA, so let's put a max on it so no one gets too crazy.
+#define PGA_GAIN_SETTING_MAX 35 // don't really need more than this on the PGA, so let's put a max on it so no one gets too crazy.
 
 void setup() {
 
   //delay(1000);
 
-  //pinMode(2, INPUT); // needed for ESP32 C6, will be used for volume input on ADC pin
+  pinMode(2, INPUT); // needed for ESP32 C6, will be used for volume input on ADC pin
   
   Serial.begin(115200);
   Serial.println(" ");
 
-  //Wire.begin(18, 19, 100000); // ESP32 C6
-  Wire.begin();
+  Wire.begin(18, 19, 100000); // ESP32 C6
+  //Wire.begin();
   //Wire.setClock(100000);
 
   if (codec1.begin() == false)  //Begin communication over I2C
@@ -129,7 +129,8 @@ void loop() {
   userInputA0 = total / NUM_OF_READINGS;
   // map it from 0-4096, to a value that is acceptable in the pga gain (0-63)
   // 0-63, (0 = -17.25dB) <<-- 0.75dB steps -->> (23 = +0dB)...(63 = +30dB)
-  pgaGain1 = map(userInputA0, 0, 4096, PGA_GAIN_SETTING_MAX, 0);
+  pgaGain1 = map(userInputA0, 0, 3500, PGA_GAIN_SETTING_MAX, 0); // pot actual readings don't get to full 4096 when close to click-off position
+  //pgaGain1 = map(userInputA0, 0, 3500, 0, PGA_GAIN_SETTING_MAX); // pot actual readings don't get to full 4096 when close to click-off position
 
   if (pgaGain1 != pgaGain1_prev) {
     codec1.setLINVOL(pgaGain1);
@@ -139,7 +140,7 @@ void loop() {
   }
 
   pgaGain1_prev = pgaGain1;
-  delay(10);
+  delay(5);
 }
 
 
@@ -152,13 +153,13 @@ void codec1_setup() {
   // 0 = 500 VMID to output
   // 1 = 20k VMID to output 
   //codec1.setVROI(WM8960_VROI_500); // default
-  codec1.setVROI(WM8960_VROI_20K);
+  //codec1.setVROI(WM8960_VROI_20K);
 
   // Analogue Bias Optimisation
   // 01 = Increased bias current optimized for AVDD=2.7V
   // 1X = Lowest bias current, optimized for AVDD=3.3V 
   //codec1.setVSEL(WM8960_VSEL_LOWEST_BIAS_CURRENT); // default
-  codec1.setVSEL(WM8960_VSEL_INCREASED_BIAS_CURRENT);
+  //codec1.setVSEL(WM8960_VSEL_INCREASED_BIAS_CURRENT);
 
   //codec1.enableMicBias();
 
@@ -210,8 +211,8 @@ void codec1_setup() {
 
 
   //  LB2LO (booster to output mixer (analog bypass)
-  codec1.enableLB2LO();
-  codec1.enableRB2RO();
+  //codec1.enableLB2LO();
+  //codec1.enableRB2RO();
 
   // connect from DAC outputs to output mixer
   codec1.enableLD2LO();
@@ -236,9 +237,9 @@ void codec1_setup() {
   //codec1.set_DACDIV(0); // default is 000 (what we need for 44.1KHz), so no need to write this.
   codec1.setWL(WM8960_WL_16BIT);
 
-  codec1.enablePeripheralMode();
-  //codec1.enableMasterMode();
-  //codec1.set_ALRCGPIO(); // note, should not be changed while ADC is enabled.
+  //codec1.enablePeripheralMode();
+  codec1.enableMasterMode();
+  codec1.setALRCGPIO(); // note, should not be changed while ADC is enabled.
 
   // enable ADCs and DACs
   codec1.enableAdcLeft();
@@ -247,8 +248,31 @@ void codec1_setup() {
   codec1.enableDacRight();
   codec1.disableDacMute();
 
-  //codec1.enableLoopBack(); // Loopback sends ADC data directly into DAC
-  codec1.disableLoopBack();
+  		// ADC digital volume
+		// Note, also needs to handle control of the ADCVU bits (volume update).
+		// Valid inputs are 0-255
+		// 0 = mute
+		// 1 = -97dB
+		// ... 0.5dB steps up to
+		// 195 = 0dB
+		// 255 = +30dB
+		//codec1.setAdcLeftDigitalVolume(200); 
+		//codec1.setAdcRightDigitalVolume(200);
+		 //codec1.setAdcLeftDigitalVolumeDB(0.00); 
+		 //codec1.setAdcRightDigitalVolumeDB(0.00);
+
+		// Causes left and right input ADC volumes to be updated
+		 //codec1.adcLeftADCVUSet(); 
+
+		// Causes left and right input ADC volumes to be updated
+		 //codec1.adcRightADCVUSet(); 
+
+
+  //codec1.setDacLeftDigitalVolumeDB(30.00); // -97.50 to +30.00dB
+  //codec1.setDacRightDigitalVolumeDB(30.00); // -97.50 to +30.00dB
+
+  codec1.enableLoopBack(); // Loopback sends ADC data directly into DAC
+  //codec1.disableLoopBack();
   codec1.disableDacMute();  // default is "soft mute" on, so we must disable mute to make channels active
 
   codec1.enableHeadphones();
@@ -256,9 +280,9 @@ void codec1_setup() {
   codec1.enableOUT3MIX();  // provides VMID as buffer for headphone ground
   //codec1.enableSpeakerZeroCross();
 
-  Serial.println("Volume set to +0dB");
+  Serial.println("Volume set to +6dB");
   //codec1.setSpeakerVolume(120);
-  codec1.setHeadphoneVolumeDB(0.00);
+  codec1.setHeadphoneVolumeDB(6.00);
   //codec1.enable3d();
 
   Serial.println("Codec 1 Setup complete. Listen to left/right INPUT1 on Speaker outputs.");
